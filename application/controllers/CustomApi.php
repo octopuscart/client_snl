@@ -481,15 +481,16 @@ class CustomApi extends REST_Controller {
         $customeele = array(
             "keys" => [
                 array(
-                    "title" => "Jacket Style",
-                    "viewtype" => "front",
-                    "type" => "main",
-                ),
-                array(
                     "title" => "Lapel Style",
                     "viewtype" => "front",
                     "type" => "main",
                 ),
+                array(
+                    "title" => "Jacket Style",
+                    "viewtype" => "front",
+                    "type" => "main",
+                ),
+                
                 array(
                     "title" => "Lapel Button Hole",
                     "viewtype" => "front",
@@ -1122,13 +1123,13 @@ class CustomApi extends REST_Controller {
     function customeElementsJacket_get() {
         $customeele = array(
             "keys" => [
-                array(
-                    "title" => "Jacket Style",
+                 array(
+                    "title" => "Lapel Style",
                     "viewtype" => "front",
                     "type" => "main",
                 ),
                 array(
-                    "title" => "Lapel Style",
+                    "title" => "Jacket Style",
                     "viewtype" => "front",
                     "type" => "main",
                 ),
@@ -1867,15 +1868,16 @@ class CustomApi extends REST_Controller {
         $customeele = array(
             "keys" => [
                 array(
-                    "title" => "Waistcoat Style",
-                    "viewtype" => "front",
-                    "type" => "main",
-                ),
-                array(
                     "title" => "Lapel Style",
                     "viewtype" => "front",
                     "type" => "main",
                 ),
+                array(
+                    "title" => "Waistcoat Style",
+                    "viewtype" => "front",
+                    "type" => "main",
+                ),
+                
                 array(
                     "title" => "Breast Pocket",
                     "viewtype" => "front",

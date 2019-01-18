@@ -8,8 +8,9 @@
                 <h4 class="modal-title" id="myModalLabel">{{projectDetailsModel.productobj.title}}</h4>
             </div>
             <div class="modal-body">
-                <img src="<?php echo custome_image_server . "/output/"; ?>{{projectDetailsModel.productobj.folder}}/fabric20001.png">
-
+                <div class="thumbnail">
+                <img src="<?php echo custome_image_server . "/output/"; ?>{{projectDetailsModel.productobj.folder}}/fabricx20001.png">
+                </div>
             </div>
 
 
