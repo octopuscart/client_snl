@@ -37,7 +37,24 @@ App.controller('ProductController', function ($scope, $http, $timeout, $interval
             argsk.push(elempx);
             argsk.push(elempm);
         }
+
+
+        var countdata = $(".info_text").text().split(" ")[1];
+        if (Number(countdata[0])) {
+            if (countdata) {
+                countdata = countdata.split("-");
+            }
+        }
+        else {
+            countdata = [1, 12];
+        }
+
+        var paginationdata = "start=" + countdata[0] + "&end=" + countdata[1];
+
+        argsk.push(paginationdata);
+
         var stargs = argsk.join("&");
+
 
 
 
@@ -61,6 +78,14 @@ App.controller('ProductController', function ($scope, $http, $timeout, $interval
 //                    $scope.productProcess.state = 2;
                 }
             }
+            
+            var totalcountdata  = result.data.product_count;
+            var productscounter = [];
+            for(i=1;i<=totalcountdata;i++){
+                productscounter.push(i);
+            }
+            
+            $scope.productResults['productscounter'] = productscounter;
 
 
             if ($scope.productResults.products.length) {
@@ -120,6 +145,96 @@ App.controller('ProductController', function ($scope, $http, $timeout, $interval
 
                 $("#amount").val("$" + $("#price-range").slider("values", 0) + " - $" + $("#price-range").slider("values", 1));
             }, 1000)
+
+            $scope.init = 1;
+        }, function () {
+            $scope.productProcess.state = 0;
+        });
+    }
+    $scope.getProducts2 = function (attrs) {
+        $scope.productProcess.state = 1;
+        var argsk = [];
+        for (i in $scope.attribute_checked) {
+            var at = $scope.attribute_checked[i];
+            var argsv = [];
+            for (t in at) {
+                var tt = at[t];
+                argsv.push(tt)
+            }
+            var ak = "a" + i + "=" + argsv.join("-");
+            argsk.push(ak);
+        }
+        var pmm = $("#price-range-min").text().replace("$", "");
+        var pmx = $("#price-range-max").text().replace("$", "");
+
+        var elempm = "maxprice=" + pmx;
+        var elempx = "minprice=" + pmm;
+
+
+
+        if (pmm.trim()) {
+            $scope.pricerange.max = pmx;
+            $scope.pricerange.min = pmm;
+            argsk.push(elempx);
+            argsk.push(elempm);
+        }
+
+
+        var countdata = $(".info_text").text().split(" ")[1];
+        if (Number(countdata[0])) {
+            if (countdata) {
+                countdata = countdata.split("-");
+            }
+        }
+        else {
+            countdata = [1, 12];
+        }
+
+        var paginationdata = "start=" + countdata[0] + "&end=" + countdata[1];
+
+        argsk.push(paginationdata);
+
+        var stargs = argsk.join("&");
+
+
+
+
+
+        var url = baseurl + "Api/productListApi/" + category_id + "";
+
+        if (stargs) {
+            url = url + "?" + stargs;
+        }
+
+        $http.get(url).then(function (result) {
+            if ($scope.productResults.products) {
+                $scope.productResults.products = result.data.products;
+            }
+            else {
+                $scope.productResults = result.data;
+                if ($scope.productResults.products.length) {
+                    $scope.checkproduct = 1;
+                }
+                else {
+//                    $scope.productProcess.state = 2;
+                }
+            }
+            
+            var totalcountdata  = result.data.product_count;
+            
+
+
+            if ($scope.productResults.products.length) {
+                $scope.productProcess.state = 2;
+            }
+            else {
+                $scope.productProcess.state = 0;
+            }
+
+
+
+
+        
 
             $scope.init = 1;
         }, function () {
@@ -208,12 +323,7 @@ App.controller('ProductController', function ($scope, $http, $timeout, $interval
         else {
             countdata = [1, 12];
         }
-        $timeout(function () {
-            $scope.productProcess.pagination.paginate = countdata;
-            $scope.productProcess.pagination.perpage = '12';
-            $scope.productProcess.products = $scope.productResults.products.slice(countdata[0]-1, countdata[1]);
-        }, 100)
-
+        console.log(countdata);
 
 
 
@@ -221,25 +331,25 @@ App.controller('ProductController', function ($scope, $http, $timeout, $interval
 
     $(document).on("click", ".page_link", function () {
         $scope.productProcess.currentpage = $(this).attr("longdesc");
-        $scope.checkProduct();
+        $scope.getProducts2();
     });
 
     $(document).on("click", ".last_link", function () {
         $scope.productProcess.currentpage = "last";
-        $scope.checkProduct();
+         $scope.getProducts2();
     });
     $(document).on("click", ".first_link", function () {
         $scope.productProcess.currentpage = "last";
-        $scope.checkProduct();
+         $scope.getProducts2();
     });
 
     $(document).on("click", ".next_link", function () {
         $scope.productProcess.currentpage = Number($scope.productProcess.currentpage) + 1;
-        $scope.checkProduct();
+         $scope.getProducts2();
     });
     $(document).on("click", ".previous_link", function () {
         $scope.productProcess.currentpage = Number($scope.productProcess.currentpage) - 1;
-        $scope.checkProduct();
+         $scope.getProducts2();
     });
 
 

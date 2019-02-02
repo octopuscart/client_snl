@@ -105,6 +105,11 @@ class Api extends REST_Controller {
         $products = [];
         $countpr = 0;
         $pricequery = "";
+        
+        $startpage = $attrdatak["start"] - 1;
+        $endpage = $attrdatak["end"];
+        unset($attrdatak["start"]);
+        unset($attrdatak["end"]);
 
         if (isset($attrdatak["minprice"])) {
             $mnpricr = $attrdatak["minprice"] - 1;
@@ -198,6 +203,7 @@ class Api extends REST_Controller {
         }
 
         $this->output->set_header('Content-type: application/json');
+        $productListFinal = array_slice($productListFinal, $startpage, 12);
         $productArray = array('attributes' => $attr_filter,
             'products' => $productListFinal,
             'product_count' => count($product_result),

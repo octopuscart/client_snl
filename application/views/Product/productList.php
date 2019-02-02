@@ -16,6 +16,22 @@ $image1 = "";
 $image2 = "";
 ?>
 
+<style>
+    .page_navigation a {
+        padding: 5px 10px;
+        border: 1px solid #000;
+        margin: 5px;
+        background: #000;
+        color: white;
+    }
+    .page_navigation a.active_page {
+        padding: 5px 10px;
+        border: 1px solid #000;
+        margin: 5px;
+        background: #fff;
+        color: black;
+    }
+</style>
 
 <section class="page_title_1 bg_light_2 t_align_c relative wrapper" style="margin-top: 0px;">
     <div class="container">
@@ -128,7 +144,7 @@ $image2 = "";
                 </div>
 
 
-                <div class="shop_isotope_container t_xs_align_c three_columns m_bottom_15" data-isotope-options='{"itemSelector" : ".shop_isotope_item","layoutMode" : "fitRows","transitionDuration":"0.7s"}'>
+                <div class="shop_isotope_container t_xs_align_c three_columns m_bottom_15" ng-if="productProcess.state == 2">
                     <!--product-->
                     <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12"  ng-repeat="(k, product) in productResults.products" style="padding:10px; ">
 
@@ -192,23 +208,27 @@ $image2 = "";
                         <!--product-->
                     </div>
                 </div>
+                <div class="col-md-12 m_bottom_15" id="paging_container1">
+            <div class="showing-info">
+                <p class="text-center"><span class="info_text ">Showing {0}-{1} of {2} results</span></p>
+            </div>
+            <br/>
+            <center>
+                <div class="page_navigation"></div>
+            </center>
+            <div class="row products-container content" ng-if="productProcess.state == 2">
+                <!-- Item -->
+                <div class=" animated zoomIn"  ng-repeat="k  in productResults.productscounter">
+
+                </div>
+            </div>
+            
+            <div style="clear: both"></div>
+        </div>
             </div>
         </div>
+
         
-        <div class="col-md-12" id="paging_container1">
-                        <div class="showing-info">
-                            <p class="text-center"><span class="info_text ">Showing {0}-{1} of {2} results</span></p>
-                        </div>
-                        <div class="row products-container content" ng-if="productProcess.state == 2">
-                            <!-- Item -->
-                            <div class="col-sm-4 animated zoomIn"  ng-repeat="(k, product) in productResults.products">
-                            </div>
-                        </div>
-                        <center>
-                            <div class="page_navigation"></div>
-                        </center>
-                        <div style="clear: both"></div>
-                    </div>
 
 
         <div id="content"  ng-if="productProcess.state == 0"> 
