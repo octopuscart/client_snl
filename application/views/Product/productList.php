@@ -153,6 +153,7 @@ $image2 = "";
                                 <!--images container-->
                                 <div class="fp_images relative">
                                     <img src="<?php echo custome_image_server . "/fabrics/"; ?>{{product.folder}}.jpg" alt="" class="tr_all" style="background: white">
+                                    <img src="<?php echo custome_image_server . "/fabrics/"; ?>{{product.folder}}.jpg" alt="" class="tr_all">
                                 </div>
 
                             </div>
