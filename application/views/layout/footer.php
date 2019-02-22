@@ -9,7 +9,7 @@
             </div>
             <div class="modal-body">
                 <div class="thumbnail">
-                <img src="<?php echo custome_image_server . "/output/"; ?>{{projectDetailsModel.productobj.folder}}/fabricx20001.png">
+                <img src="<?php echo custome_image_server . "fabrics/"; ?>{{projectDetailsModel.productobj.folder}}.jpg">
                 </div>
             </div>
 
