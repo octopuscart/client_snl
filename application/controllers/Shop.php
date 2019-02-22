@@ -39,8 +39,6 @@ class Shop extends CI_Controller {
         $this->load->view('Pages/aboutus');
     }
 
-
-
     public function testinsert() {
         $foldersstrip = ['HL_41007_72.jpg', 'HL_41009_72.jpg', 'HL_41043_72.jpg', 'HL_41044_72.jpg', 'HL_41045_72.jpg', 'HL_41094_72.jpg', 'HL_51045_64.jpg', 'HL_51047_64.jpg', 'HL_51048_64.jpg', 'HL_51077_64.jpg', 'HL_51082_64.jpg', 'HL_51143_64.jpg', 'HL_51145_64.jpg', 'HL_51146_64.jpg', 'HL_51147_64.jpg', 'HL_51148_64.jpg', 'HL_51156_64.jpg', 'HL_51157_64.jpg', 'HL_51158_64.jpg', 'HL_71005_56.jpg', 'HL_71007_56.jpg', 'HL_71008_56.jpg', 'HL_71009_56.jpg', 'HL_71010_56.jpg', 'HL_71058_56.jpg', 'HL_71059_56.jpg', 'HL_71087_56.jpg', 'HL_71088_56.jpg', 'HL_71093_56.jpg', 'HL_71094_56.jpg', 'HL_71098_56.jpg', 'HL_71099_56.jpg', 'HL_71122_56.jpg', 'HL_71124_56.jpg', 'HL_71126_56.jpg', 'HL_71241_56.jpg', 'HL_71242_56.jpg', 'HL_71299_56.jpg', 'HL_71300_56.jpg', 'HL_71301_56.jpg', 'HL_71303_56.jpg'];
         $foldercheck = ['HL_42002_72.jpg', 'HL_42004_72.jpg', 'HL_42004_72.png', 'HL_42009_72.jpg', 'HL_42023_72.jpg', 'HL_42031_72.jpg', 'HL_42032_72.jpg', 'HL_42033_72.jpg', 'HL_42034_72.jpg', 'HL_42035_72.jpg', 'HL_42036_72.jpg', 'HL_42037_72.jpg', 'HL_42038_72.jpg', 'HL_42039_72.jpg', 'HL_42040_56.jpg', 'HL_42040_72.jpg', 'HL_42041_72.jpg', 'HL_42042_72.jpg', 'HL_42067_72.jpg', 'HL_42068_72.jpg', 'HL_42069_72.jpg', 'HL_42071_72.jpg', 'HL_72104_56.jpg', 'HL_72107_56.jpg', 'HL_72108_56.jpg', 'HL_72119_56.jpg', 'HL_72120_56.jpg', 'HL_72121_56.jpg', 'HL_72124_56.jpg', 'HL_72197_56.jpg', 'HL_72198_56.jpg', 'HL_72199_56.jpg', 'HL_72200_56.jpg', 'HL_72211_56.jpg', 'HL_72214_56.jpg', 'HL_72215_56.jpg', 'HL_72217_56.jpg', 'HL_72219_56.jpg', 'HL_72221_56.jpg', 'HL_72222_56.jpg', 'HL_72275_56.jpg', 'HL_72276_56.jpg', 'HL_72277_56.jpg', 'HL_72281_56.jpg', 'HL_72282_56.jpg'];
@@ -88,8 +86,8 @@ class Shop extends CI_Controller {
     public function testinsertsuit() {
         $foldercheck = ['12501.jpg', '12502.jpg', '12503.jpg', '12504.jpg', '12508.jpg', '12509.jpg', '12510.jpg', '12511.jpg', '12512.jpg', '12514.jpg', '12601.jpg', '12602.jpg', '9775.jpg', '9776.jpg', '9777.jpg', '9778.jpg', '9779.jpg', '9780.jpg'];
         $folderchek2 = ['12512.jpg', '12514.jpg', '12601.jpg', '12602.jpg', '12603.jpg', '12604.jpg', '12605.jpg', '12606.jpg', '12611.jpg', '12612.jpg', '12613.jpg', '12615.jpg', '12616.jpg', '12617.jpg', '12618.jpg', '12619.jpg', '12649.jpg', '12650.jpg', '12651.jpg', '12652.jpg', '12653.jpg', '12654.jpg', '12655.jpg', '12656.jpg'];
-       
-        $folderstrip =['SF10057.jpg', 'SF10423.jpg', 'SF10441.jpg', 'SF10750.jpg', 'SF10755.jpg', 'SF10759.jpg', 'SF10760.jpg', 'SF10762.jpg', 'SF11218.jpg', 'SF11222.jpg', 'SF11406.jpg', 'SF11407.jpg', 'SF11553.jpg', 'SF11554.jpg', 'SF11556.jpg', 'SF11557.jpg', 'SF11558.jpg', 'SF11559.jpg', 'SF11562.jpg', 'SF11563.jpg', 'SF11564.jpg', 'SF11566.jpg', 'SF11567.jpg', 'SF11568.jpg', 'SF11569.jpg', 'SF11571.jpg', 'SF11572.jpg', 'SF11573.jpg', 'SF11574.jpg', 'SF11575.jpg', 'SF11576.jpg', 'SF11577.jpg', 'SF11578.jpg', 'SF11580.jpg', 'SF11581.jpg', 'SF12115.jpg', 'SF12116.jpg', 'SF12117.jpg', 'SF12118.jpg', 'SF12119.jpg', 'SF12120.jpg', 'SF12121.jpg', 'SF12122.jpg', 'SF12123.jpg', 'SF12124.jpg', 'SF12125.jpg', 'SF12126.jpg', 'SF12127.jpg', 'SF12128.jpg', 'SF12129.jpg', 'SF12130.jpg', 'SF12131.jpg', 'SF12132.jpg', 'SF12133.jpg', 'SF12134.jpg', 'SF12135.jpg', 'SF12136.jpg', 'SF12137.jpg', 'SF7859.jpg', 'SF9338.jpg']; 
+
+        $folderstrip = ['SF10057.jpg', 'SF10423.jpg', 'SF10441.jpg', 'SF10750.jpg', 'SF10755.jpg', 'SF10759.jpg', 'SF10760.jpg', 'SF10762.jpg', 'SF11218.jpg', 'SF11222.jpg', 'SF11406.jpg', 'SF11407.jpg', 'SF11553.jpg', 'SF11554.jpg', 'SF11556.jpg', 'SF11557.jpg', 'SF11558.jpg', 'SF11559.jpg', 'SF11562.jpg', 'SF11563.jpg', 'SF11564.jpg', 'SF11566.jpg', 'SF11567.jpg', 'SF11568.jpg', 'SF11569.jpg', 'SF11571.jpg', 'SF11572.jpg', 'SF11573.jpg', 'SF11574.jpg', 'SF11575.jpg', 'SF11576.jpg', 'SF11577.jpg', 'SF11578.jpg', 'SF11580.jpg', 'SF11581.jpg', 'SF12115.jpg', 'SF12116.jpg', 'SF12117.jpg', 'SF12118.jpg', 'SF12119.jpg', 'SF12120.jpg', 'SF12121.jpg', 'SF12122.jpg', 'SF12123.jpg', 'SF12124.jpg', 'SF12125.jpg', 'SF12126.jpg', 'SF12127.jpg', 'SF12128.jpg', 'SF12129.jpg', 'SF12130.jpg', 'SF12131.jpg', 'SF12132.jpg', 'SF12133.jpg', 'SF12134.jpg', 'SF12135.jpg', 'SF12136.jpg', 'SF12137.jpg', 'SF7859.jpg', 'SF9338.jpg'];
         foreach ($folderstrip as $key => $value) {
             $folder = $value;
             $foldermain = str_replace(".jpg", "", $folder);
@@ -131,6 +129,173 @@ class Shop extends CI_Controller {
                 "folder" => $foldermain);
 
             #$this->db->insert('products', $products);
+        }
+    }
+
+    public function migration() {
+        if ($this->db->table_exists('mailchimp_list')) {
+            // table exists
+        } else {
+            $this->db->query('CREATE TABLE IF NOT EXISTS `mailchimp_list` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `m_id` varchar(100) DEFAULT NULL,
+  `name` varchar(250) DEFAULT NULL,
+  `datetime` varchar(100) DEFAULT NULL,
+  `member_count` varchar(50) NOT NULL,
+  `display_index` varchar(50) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=14 ;');
+        }
+
+
+        if ($this->db->table_exists('configuration_email')) {
+            // table exists
+        } else {
+            $this->db->query('CREATE TABLE IF NOT EXISTS `configuration_email` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `account_type` varchar(200) NOT NULL,
+  `account_name` varchar(100) NOT NULL,
+  `smtp_server` varchar(200) NOT NULL,
+  `username` varchar(200) NOT NULL,
+  `password` varchar(200) NOT NULL,
+  `smtp_port` varchar(50) NOT NULL,
+  `api_key` varchar(512) NOT NULL,
+  `api_endpoint` varchar(512) NOT NULL,
+  `default` varchar(10) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=8 ;');
+        }
+
+
+        if ($this->db->table_exists('mailer_contacts2_check')) {
+            // table exists
+        } else {
+            $this->db->query('CREATE TABLE IF NOT EXISTS `mailer_contacts2_check` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `email` varchar(200) NOT NULL,
+  `mailer_contact_id` varchar(50) NOT NULL,
+  `status` varchar(500) NOT NULL,
+  `datetime` varchar(50) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1242 ;');
+        }
+
+
+        if ($this->db->table_exists('mailer_contacts')) {
+            // table exists
+        } else {
+            $this->db->query('CREATE TABLE IF NOT EXISTS `mailer_contacts` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `email` varchar(200) NOT NULL,
+  `first_name` varchar(100) DEFAULT NULL,
+  `last_name` varchar(100) DEFAULT NULL,
+  `mailer_list_id` varchar(50) NOT NULL,
+  `status` varchar(50) NOT NULL,
+  `datetime` varchar(50) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;');
+        }
+
+        if ($this->db->table_exists('mailer_list')) {
+            // table exists
+        } else {
+            $this->db->query('CREATE TABLE IF NOT EXISTS `mailer_list` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `m_id` varchar(100) DEFAULT NULL,
+  `name` varchar(250) DEFAULT NULL,
+  `datetime` varchar(100) DEFAULT NULL,
+  `member_count` varchar(50) NOT NULL,
+  `display_index` varchar(50) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=15 ;');
+        }
+
+
+
+
+
+        if ($this->db->table_exists('mailer_contacts2')) {
+            // table exists
+        } else {
+            $this->db->query('CREATE TABLE IF NOT EXISTS `mailer_contacts2` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `email` varchar(200) NOT NULL,
+  `first_name` varchar(100) DEFAULT NULL,
+  `last_name` varchar(100) DEFAULT NULL,
+  `full_name` varchar(200) NOT NULL,
+  `mailer_list_id` varchar(50) NOT NULL,
+  `status` varchar(50) NOT NULL,
+  `datetime` varchar(50) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;');
+        }
+
+
+        if ($this->db->table_exists('appointment_list')) {
+            // table exists
+        } else {
+            $this->db->query('CREATE TABLE IF NOT EXISTS `appointment_list` (
+  `id` int(122) NOT NULL AUTO_INCREMENT,
+  `select_date` varchar(122) NOT NULL,
+  `select_time` varchar(122) NOT NULL,
+  `first_name` varchar(122) NOT NULL,
+  `no_of_person` varchar(30) NOT NULL,
+  `last_name` varchar(122) NOT NULL,
+  `email` varchar(122) NOT NULL,
+  `contact_no` varchar(122) NOT NULL,
+  `hotel` varchar(200) NOT NULL,
+  `address` varchar(300) NOT NULL,
+  `city_state` varchar(200) NOT NULL,
+  `country` varchar(200) NOT NULL,
+  `referral` varchar(122) NOT NULL,
+  `datetime` varchar(122) NOT NULL,
+  `appointment_type` varchar(122) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=60 ;');
+        }
+
+
+        if ($this->db->field_exists('hotel', 'appointment_list')) {
+            // table exists
+        } else {
+            $this->db->query('ALTER TABLE `appointment_list` ADD `hotel` VARCHAR(200) NOT NULL AFTER `contact_no`, ADD `address` VARCHAR(300) NOT NULL AFTER `hotel`, ADD `city_state` VARCHAR(200) NOT NULL AFTER `address`, ADD `country` VARCHAR(200) NOT NULL AFTER `city_state`;');
+        }
+
+
+
+
+        if ($this->db->table_exists('appointment_entry')) {
+            // table exists
+        } else {
+            $this->db->query('CREATE TABLE IF NOT EXISTS `appointment_entry` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `aid` varchar(10) NOT NULL,
+  `country` varchar(100) NOT NULL,
+  `city_state` varchar(100) NOT NULL,
+  `appointment_type` varchar(50) NOT NULL,
+  `hotel` varchar(200) NOT NULL,
+  `address` varchar(250) NOT NULL,
+  `days` varchar(200) NOT NULL,
+  `start_date` varchar(100) NOT NULL,
+  `end_date` varchar(100) NOT NULL,
+  `contact_no` varchar(50) NOT NULL,
+  `date` varchar(100) NOT NULL,
+  `from_time` varchar(100) NOT NULL,
+  `to_time` varchar(100) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;');
+        }
+
+        if ($this->db->field_exists('display_index', 'category')) {
+            // table exists
+        } else {
+            $this->db->query('ALTER TABLE `category` ADD `display_index` INT NOT NULL AFTER `parent_id`;');
+        }
+
+        if ($this->db->field_exists('display_index', 'products ')) {
+            // table exists
+        } else {
+            $this->db->query('ALTER TABLE `products` ADD `display_index` INT NOT NULL AFTER `folder`;');
         }
     }
 
