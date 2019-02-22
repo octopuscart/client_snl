@@ -11,7 +11,7 @@ class PayPalPaymentGuest extends CI_Controller {
         $this->load->model('User_model');
         $this->checklogin = $this->session->userdata('logged_in');
         $this->user_id = $this->session->userdata('logged_in')['login_id'];
-        $query = $this->db->get('site_configuration');
+        $query = $this->db->get('configuration_site');
         $siteconfiguration = $query->row();
         
     }
@@ -95,7 +95,7 @@ class PayPalPaymentGuest extends CI_Controller {
             $data["error"] = '<div style="color:red"><b>Error : </b>' . urldecode($httpParsedResponseAr["L_LONGMESSAGE0"]) . '</div>';
             $this->load->view('paypal/error', $data);
         }
-        $this->load->view('paypal/process', $data);
+       // $this->load->view('paypal/process', $data);
     }
 
     public function success() {
