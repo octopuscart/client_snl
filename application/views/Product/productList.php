@@ -146,13 +146,13 @@ $image2 = "";
 
                 <div class="shop_isotope_container t_xs_align_c three_columns m_bottom_15" ng-if="productProcess.state == 2">
                     <!--product-->
-                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12"  ng-repeat="(k, product) in productResults.products" style="padding:10px; ">
+                    <div class="col-lg-4 col-md-5 col-sm-5 col-xs-12"  ng-repeat="(k, product) in productResults.products" style="padding:10px; ">
 
                         <figure class="fp_item t_align_c d_xs_inline_b" >
                             <div class="relative r_corners d_xs_inline_b d_mxs_block wrapper m_bottom_23">
                                 <!--images container-->
                                 <div class="fp_images relative">
-                                    <img src="<?php echo custome_image_server . "/output/"; ?>{{product.folder}}/fabricx0001.png" alt="" class="tr_all" style="background: white">
+                                    <img src="<?php echo custome_image_server . "/fabrics/"; ?>{{product.folder}}.jpg" alt="" class="tr_all" style="background: white">
                                     <img src="<?php echo custome_image_server . "/output/"; ?>{{product.folder}}/fabricx0001.png" alt="" class="tr_all">
                                 </div>
 
