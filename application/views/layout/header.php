@@ -170,11 +170,25 @@
                     "link" => site_url('Product/ProductList/8/0')),
             ]
         ),
+        
         array(
-            "title" => "Our Clients",
-            "submenu" => "no",
+            "title" => "Leather Jacket",
+            "submenu" => "yes",
             "link" => '#',
+            "submenuitems" => [
+                array(
+                    "title" => "Men",
+                    "link" => site_url('Shop/leather_jacket/men')),
+                array(
+                    "title" => "Women",
+                    "link" => site_url('Shop/leather_jacket/women')),
+            ]
         ),
+        
+      
+        
+        
+        
 //        array(
 //            "title" => "Support",
 //            "submenu" => "no",
