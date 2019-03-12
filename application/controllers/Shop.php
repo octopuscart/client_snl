@@ -45,7 +45,7 @@ class Shop extends CI_Controller {
                 '27.jpg', '29.jpg', '3.jpg', '31.jpg', '32.jpg', '33.jpg', '35.jpg', '36.jpg', '37.jpg', '38.jpg',
                 '39.jpg', '4.jpg', '40.jpg', '9.jpg'],
             "Women" => ['10.jpg', '13.jpg', '14.jpg', '16.jpg', '18.jpg',   
-                '24.jpg', '28.jpg', '30.jpg', '34.jpg', '5.jpg', '6.jpg', '7.jpg', '8.jpg'],
+                '24.jpg', '28.jpg', '30.jpg', '34.jpg', '5.jpg', '6.jpg',  '8.jpg'],
         );
         switch ($gender) {
             case "men":
