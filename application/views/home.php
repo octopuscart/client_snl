@@ -540,7 +540,7 @@ for ($i = 1; $i < 7; $i++) {
     text-align: right;">For Manual Payment Download This Form &nbsp;&nbsp;<i class="icon-right-thin inline_select"></i></h4>
 						</div>
 						<div class="col-lg-3 col-md-3 col-sm-4 appear-animation fadeInUp appear-animation-visible" data-appear-animation="fadeInUp" data-appear-animation-delay="150" style="animation-delay: 150ms;">
-							<a href="<?php echo base_url(); ?>assets/images/Credit_Card_Authorization_Form_shaniel_fashion_ltd.jpg" download id="get_started" class="button_type_3 r_corners d_inline_b color_green tt_uppercase fs_large m_top_5 m_sm_top_25 tr_all">Download Now</a>
+                                                    <a href="<?php echo base_url(); ?>assets/images/Credit_Card_Authorization_Form_shaniel_fashion_ltd.jpg" target="_blank" download id="get_started" class="button_type_3 r_corners d_inline_b color_green tt_uppercase fs_large m_top_5 m_sm_top_25 tr_all">Download Now</a>
 						</div>
 					</div>
 				</div>
