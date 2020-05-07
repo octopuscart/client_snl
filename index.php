@@ -55,7 +55,7 @@
  */
 $baselink = 'http://' . $_SERVER['SERVER_NAME'];
 $checkdebug = strpos($baselink, '192.168') ? TRUE : FALSE;
-//$checkdebug = TRUE;
+$checkdebug = TRUE;
 if ($checkdebug) {
     define('ENVIRONMENT', 'development');
 } else{

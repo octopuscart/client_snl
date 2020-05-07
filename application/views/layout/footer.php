@@ -56,8 +56,9 @@
                                     <i class="icon-mail-alt"></i>
                                 </div>
 
-                                <a href="mailto:shanieltailor@gmail.com" class="color_black color_light _hover">shanieltailor@gmail.com</a><br/>
-                                <a href="mailto:sales@shanielfashions.com" class="color_black color_light _hover" style='margin-left:35px'>sales@shanielfashions.com</a>
+                                <a href="mailto:shaniel@netvigator.com" class="color_black color_light _hover" >shaniel@netvigator.com</a><br/>
+                                                                <a href="mailto:shanieltailor@gmail.com" class="color_black color_light _hover" style='margin-left:35px'>shanieltailor@gmail.com</a>
+
                             </li>
 
                         </ul>
