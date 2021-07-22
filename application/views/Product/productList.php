@@ -194,8 +194,11 @@ $image2 = "";
                                 </div>
                                 <div class="clearfix fp_buttons">
                                     <div class="half_column w_md_full animate_fctl tr_all f_left with_ie f_md_none m_md_bottom_10">
-                                        <a href="<?php echo site_url("Product/customizationRedirect/") ?><?php echo $custom_id; ?>/{{product.product_id}}" class="button_type_6 d_inline_b color_pink transparent r_corners vc_child tr_all add_to_cart_button " disabled=true><span class="d_inline_m clerarfix"><i class="icon-basket f_left m_right_5 fs_small"></i><span class="fs_small">Customize</span></span></a>
+                                        <a href="#" class="button_type_6 d_inline_b color_pink transparent r_corners vc_child tr_all add_to_cart_button " disabled=true><span class="d_inline_m clerarfix"><i class="icon-basket f_left m_right_5 fs_small"></i><span class="fs_small">Customize</span></span></a>
                                     </div>
+									<!-- <div class="half_column w_md_full animate_fctl tr_all f_left with_ie f_md_none m_md_bottom_10">
+                                        <a href="<?php echo site_url("Product/customizationRedirect/") ?><?php echo $custom_id; ?>/{{product.product_id}}" class="button_type_6 d_inline_b color_pink transparent r_corners vc_child tr_all add_to_cart_button " disabled=true><span class="d_inline_m clerarfix"><i class="icon-basket f_left m_right_5 fs_small"></i><span class="fs_small">Customize</span></span></a>
+                                    </div> -->
                                     <div class="half_column w_md_full animate_fctr tr_all f_left clearfix with_ie f_md_none">
                                         <button ng-click="viewShortDetails(product, '')"  data-toggle="modal" data-target="#largeimage"  type="button" class="button_type_6 m_left_5 relative tooltip_container f_right f_md_none d_md_inline_b d_block color_dark r_corners vc_child tr_all color_purple_hover t_align_c m_right_5 m_md_right_0">
                                             <i class="icon-zoom-in d_inline_m fs_large"></i>
