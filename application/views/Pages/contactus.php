@@ -47,7 +47,8 @@ $this->load->view('layout/header');
                             <div class="f_left icon_wrap_size_1 color_dark  circle">
                                 <i class="icon-location"></i>
                             </div>
-                            B & C, G/F, <br/>Comfort Building, <br/> 86-88A Nathan Road,<br/> Tsim Sha Tsui, <br/>Kowloon, Hong Kong
+                            <!--B & C, G/F, <br/>Comfort Building, <br/> 86-88A Nathan Road,<br/> Tsim Sha Tsui, <br/>Kowloon, Hong Kong-->
+                               No. 10 Granville Road.,<br/> 7/Floor Shop 705,<br/> Tsim Sha Tsui, Kowloon,<br/> Hong Kong
 
                         </li>
                         <li class='fw_light'>

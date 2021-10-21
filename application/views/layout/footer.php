@@ -9,7 +9,7 @@
             </div>
             <div class="modal-body">
                 <div class="thumbnail">
-                <img src="<?php echo custome_image_server . "fabrics/"; ?>{{projectDetailsModel.productobj.folder}}.jpg">
+                    <img src="<?php echo custome_image_server . "fabrics/"; ?>{{projectDetailsModel.productobj.folder}}.jpg">
                 </div>
             </div>
 
@@ -57,13 +57,13 @@
                                 </div>
 
                                 <a href="mailto:shaniel@netvigator.com" class="color_black color_light _hover" >shaniel@netvigator.com</a><br/>
-                                                                <a href="mailto:shanieltailor@gmail.com" class="color_black color_light _hover" style='margin-left:35px'>shanieltailor@gmail.com</a>
+                                <a href="mailto:shanieltailor@gmail.com" class="color_black color_light _hover" style='margin-left:35px'>shanieltailor@gmail.com</a>
 
                             </li>
 
                         </ul>
 
-                       
+
                     </div>
                 </div>
 
@@ -77,7 +77,8 @@
                                 <div class="icon_wrap_size_1 color_light  circle f_left">
                                     <i class="icon-location"></i>
                                 </div>
-                                B & C, G/F, Comfort Building, <br/> 86-88A Nathan Road,<br/> Tsim Sha Tsui, Kowloon,<br/> Hong Kong
+                                <!--B & C, G/F, Comfort Building, <br/> 86-88A Nathan Road,<br/> Tsim Sha Tsui, Kowloon,<br/> Hong Kong-->
+                                No. 10 Granville Road.,<br/> 7/Floor Shop 705,<br/> Tsim Sha Tsui, Kowloon,<br/> Hong Kong
                             </li>
                             <li>
                                 <a href="https://www.google.co.in/maps/place/Shaniel+Custom+Tailors/@22.2990774,114.1726538,15z/data=!4m5!3m4!1s0x0:0x86434735e1a12048!8m2!3d22.2990774!4d114.1726538" target="_blank" class="button_type_2 color_light r_corners tr_all color_light _hover d_inline_m fs_medium t_md_align_c w_break">Open in Google Maps</a>
