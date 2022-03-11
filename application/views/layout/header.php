@@ -458,7 +458,6 @@
 
                                             </div>
                                         </div>
-                                        <!--<img src="<?php echo base_url(); ?>assets/theme/images/tradmark.png" class="hktradmark2">-->
 
                                     </div>
 
